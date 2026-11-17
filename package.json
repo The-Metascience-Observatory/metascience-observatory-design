@@ -1,0 +1,32 @@
+{
+  "name": "@metascience-observatory/design",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shared look of the Metascience Observatory websites: colour tokens, Tailwind preset, navbar, footer, card, disclaimer.",
+  "sideEffects": ["*.css"],
+  "exports": {
+    ".": "./src/index.ts",
+    "./tokens.css": "./tokens.css",
+    "./tailwind-preset": "./tailwind-preset.cjs",
+    "./content": "./content.cjs"
+  },
+  "files": ["src", "tokens.css", "tailwind-preset.cjs", "content.cjs", "README.md"],
+  "scripts": { "typecheck": "tsc --noEmit" },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.6.0"
+  },
+  "peerDependencies": {
+    "next": ">=15",
+    "react": ">=18",
+    "tailwindcss": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "next": "^16.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.6.0"
+  }
+}
